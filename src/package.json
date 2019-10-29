@@ -1,0 +1,23 @@
+{
+  "main": "main.js",
+  "android": {
+    "v8Flags": "--expose_gc",
+    "markingMode": "none"
+  },
+  "browser": {
+    "child_process": "false",
+    "dgram": "empty"
+  },
+  "nativescript": {
+    "nodeify": {
+      "package-dependencies": {
+        "aws-sdk": [
+          {
+            "xml/browser_parser": "xml/node_parser",
+            "lib/node_loader": "lib/browser_loader"
+          }
+        ]
+      }
+    }
+  }
+}
